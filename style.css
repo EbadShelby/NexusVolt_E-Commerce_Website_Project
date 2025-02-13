@@ -161,7 +161,7 @@ header {
 }
 .search_icon {
   filter: brightness(0) invert(1);
-  width: 2.125rem;
+  width: 2rem;
 }
 .input-search {
   background-color: var(--clr-neutral-900);
@@ -177,10 +177,9 @@ header {
   align-items: center;
   justify-content: center;
   background-color: var(--clr-neutral-800);
-  padding: var(--spacing-100);
+  padding: 0.5625rem;
   border-radius: 0 0.25rem 0.25rem 0;
 }
-
 
 .cart_icon {
   width: 2rem;
@@ -189,13 +188,13 @@ header {
 
 .wishlist_icon {
   filter: brightness(100) invert(0);
-  width: 2.25rem;
+  width: 2.3125rem;
   margin-right: var(--spacing-250);
 }
 
 .user_icon {
   margin-right: var(--spacing-150);
-  width: 1.75rem;
+  width: 34px;
 }
 
 .user_icon,
