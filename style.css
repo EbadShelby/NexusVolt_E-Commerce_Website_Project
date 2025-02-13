@@ -1,0 +1,306 @@
+/* ======================================= */
+/* ========|| Custom Properties ||======== */
+/* ======================================= */
+:root {
+  --clr-primary: hsl(204, 77%, 26%);
+
+  --clr-secondary-green: hsl(156, 86%, 28%);
+  --clr-secondary-red: hsl(346, 100%, 42%);
+  --clr-secondary-dark-red: hsl(5, 65%, 33%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(71, 4%, 51%);
+  --clr-neutral-800: hsl(201, 24%, 14%);
+  --clr-neutral-900: hsl(203, 80%, 4%);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --ff-accent: "Montserrat", sans-serif;
+  --ff-base: "Roboto", sans-serif;
+  --ff-base: "Ubuntu", sans-serif;
+
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-150: 0.75rem;
+  --spacing-200: 1rem;
+  --spacing-250: 1.25rem;
+  --spacing-300: 1.5rem;
+  --spacing-350: 1.75rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.75rem;
+  --spacing-800: 6.25rem;
+  --spacing-900: 10rem;
+  --spacing-1000: 15rem;
+  --spacing-1100: 18.75rem;
+  --spacing-1200: 25rem;
+
+  /* Desktop */
+  --fs-desktop-smallest: 0.75rem; /* 12px */
+  --fs-desktop-detail: 0.875rem; /* 14px */
+  --fs-desktop-regular: 1.125rem; /* 16px/18px */
+  --fs-desktop-subtitle-small: ; /* 20px */
+  --fs-desktop-subtitle-regular: 2.5rem; /* 40px */
+  --fs-desktop-subtitle-large: ; /* 22px */
+  --fs-desktop-main-small: 2rem; /* 32px */
+  --fs-desktop-main-regular: 2.375rem; /* 38px */
+  --fs-desktop-main-large: 2.625rem; /* 42px */
+  --fs-desktop-display-small: 3.75rem; /* 60px */
+  --fs-desktop-display-regular: 4.5rem; /* 72px */
+  --fs-desktop-display-large: 5rem; /* 80px */
+}
+
+/* ======================================= */
+/* ===============|| Reset ||============= */
+/* ======================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  overflow-wrap: break-word;
+  /* max-width: 75ch; */
+  text-wrap: pretty; /*prevent alone words*/
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* ======================================= */
+/* ========|| General Styling ||========== */
+/* ======================================= */
+body {
+  font-family: var(--ff-base);
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+}
+
+/* ======================================= */
+/* ==========|| Header Style ||=========== */
+/* ======================================= */
+header {
+  border-bottom: 1px solid var(--clr-neutral-800);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-700);
+  height: 5rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-family: var(--ff-logo);
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.logo {
+  width: 2.75rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-inline: var(--spacing-1200);
+}
+.search_icon {
+  filter: brightness(0) invert(1);
+  width: 2.125rem;
+}
+.input-search {
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-neutral-800);
+  padding: var(--spacing-150) var(--spacing-200);
+  border-radius: 0.25rem 0 0 0.25rem;
+  font-size: 1rem;
+  flex: 1;
+}
+.search-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-neutral-800);
+  padding: var(--spacing-100);
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+
+.cart_icon {
+  width: 2rem;
+  margin-right: var(--spacing-250);
+}
+
+.wishlist_icon {
+  filter: brightness(100) invert(0);
+  width: 2.25rem;
+  margin-right: var(--spacing-250);
+}
+
+.user_icon {
+  margin-right: var(--spacing-150);
+  width: 1.75rem;
+}
+
+.user_icon,
+.cart_icon {
+  filter: brightness(100) invert(1);
+}
+
+/* ======================================= */
+/* ===========|| Main Style ||============ */
+/* ======================================= */
+main {
+  padding-top: 5rem;
+}
+
+/* =============|| Buttons ||============= */
+
+/* =============|| Inputs ||============= */
+
+/* ======================================= */
+/* ==========|| footer Style ||=========== */
+/* ======================================= */
+
+/* ======================================= */
+/* ============|| Utilities ||============ */
+/* ======================================= */
+
+/* ======================================= */
+/* ===========|| Breakpoints ||=========== */
+/* ======================================= */
+
+/* button shadow  left-right/ down-up/ blur/ spread */
+/* box-shadow: inset 0px -2px 0px 1px rgba(0,0,0,0.4); */
+
+/* 
+[cl] console.log
+[qs] querySelector
+[qsa] querySelectorAll
+[js] JSON.stringify
+[jp] JSON.parse
+*/
+/* 
+2xl
+@media (max-width: 1536px) {}
+
+xl
+@media (max-width: 1280px) {}
+
+lg
+@media (max-width: 1024px) {}
+
+md
+@media (max-width: 768px) {}
+
+sm
+@media (max-width: 640px) {}
+
+xs
+@media (max-width: 475px) {} */
+/* 
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+2xl
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+xl
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+lg
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+md
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+sm
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+xs
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+} */
