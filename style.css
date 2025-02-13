@@ -188,7 +188,7 @@ header {
 
 .wishlist_icon {
   filter: brightness(100) invert(0);
-  width: 2.3125rem;
+  width: 2.375rem;
   margin-right: var(--spacing-250);
 }
 
