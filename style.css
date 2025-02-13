@@ -206,7 +206,20 @@ header {
 /* ===========|| Main Style ||============ */
 /* ======================================= */
 main {
-  padding-top: 5rem;
+  padding-top: 6rem;
+}
+.new-on-shop  {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.new-on-shop img {
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 /* =============|| Buttons ||============= */
