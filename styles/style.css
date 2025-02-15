@@ -2,7 +2,8 @@
 /* ========|| Custom Properties ||======== */
 /* ======================================= */
 :root {
-  --clr-primary: hsl(204, 77%, 26%);
+  --clr-primary-700: hsl(204, 57%, 46%);
+  --clr-primary-800: hsl(204, 77%, 26%);
 
   --clr-secondary-green: hsl(156, 86%, 28%);
   --clr-secondary-red: hsl(346, 100%, 42%);
@@ -54,68 +55,6 @@
 }
 
 /* ======================================= */
-/* ===============|| Reset ||============= */
-/* ======================================= */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  min-height: 100vh;
-}
-
-body {
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  vertical-align: middle;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p {
-  overflow-wrap: break-word;
-  /* max-width: 75ch; */
-  text-wrap: pretty; /*prevent alone words*/
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-  line-height: 1.1;
-  text-wrap: balance;
-}
-
-/* ======================================= */
 /* ========|| General Styling ||========== */
 /* ======================================= */
 body {
@@ -141,6 +80,12 @@ header {
 main {
   padding-top: 6rem;
 }
+
+.container {
+  max-width: 70rem;
+  margin-inline: auto;
+}
+
 /* ======================================= */
 /* ==========|| Header Style ||=========== */
 /* ======================================= */
@@ -254,24 +199,25 @@ main {
 [js] JSON.stringify
 [jp] JSON.parse
 */
-/* 
-2xl
-@media (max-width: 1536px) {}
 
-xl
-@media (max-width: 1280px) {}
+/* 2xl */
+/* @media (max-width: 1536px) {} */
 
-lg
-@media (max-width: 1024px) {}
+/* xl */
+/* @media (max-width: 1280px) {} */
 
-md
-@media (max-width: 768px) {}
+/* lg */
+/* @media (max-width: 1024px) {} */
 
-sm
-@media (max-width: 640px) {}
+/* md */
+/* @media (max-width: 768px) {} */
 
-xs
-@media (max-width: 475px) {} */
+/* sm */
+/* @media (max-width: 640px) {} */
+
+/* xs */
+/* @media (max-width: 475px) {} */
+
 /* 
 .container {
   max-width: 1536px;
