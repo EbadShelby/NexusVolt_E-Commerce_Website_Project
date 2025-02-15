@@ -124,9 +124,6 @@ body {
   color: var(--clr-neutral-100);
 }
 
-/* ======================================= */
-/* ==========|| Header Style ||=========== */
-/* ======================================= */
 header {
   border-bottom: 1px solid var(--clr-neutral-800);
   position: fixed;
@@ -140,6 +137,13 @@ header {
   padding: 0 var(--spacing-700);
   height: 5rem;
 }
+
+main {
+  padding-top: 6rem;
+}
+/* ======================================= */
+/* ==========|| Header Style ||=========== */
+/* ======================================= */
 
 .logo-container {
   display: flex;
@@ -209,9 +213,7 @@ header {
 /* ======================================= */
 /* ===========|| Main Style ||============ */
 /* ======================================= */
-main {
-  padding-top: 6rem;
-}
+
 .new-on-shop {
   display: flex;
   justify-content: center;
