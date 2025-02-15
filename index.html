@@ -16,37 +16,68 @@
     />
   </head>
   <body>
-    <header>
-      <div class="logo-container">
-        <img class="logo" src="images/logo.png" alt="logo" />
-        <p>NexusVolt</p>
-      </div>
-      <div class="search-container">
-        <input
-          class="input-search"
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search in NexusVolt"
-        />
-        <div class="search-icon-container">
-          <img
-            class="search_icon"
-            src="icons/search_icon.png"
-            alt="search_icon"
-          />
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__top">
+            <div class="header__logo">
+              <img
+                class="header__logo-image"
+                src="images/logo.png"
+                alt="NexusVolt Logo"
+              />
+              <p class="header__logo-text">NexusVolt</p>
+            </div>
+
+            <div class="header__search">
+              <input
+                class="header__search-input"
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search in NexusVolt"
+              />
+              <div class="header__search-icon">
+                <img
+                  class="header__search-icon-image"
+                  src="icons/search_icon.png"
+                  alt="Search"
+                />
+              </div>
+            </div>
+
+            <div class="header__icons">
+              <img
+                class="header__icon--cart"
+                src="icons/cart_icon.png"
+                alt="Cart"
+              />
+              <img
+                class="header__icon--wishlist"
+                src="icons/wishlist_icon.png"
+                alt="Wishlist"
+              />
+              <img
+                class="header__icon--user"
+                src="icons/user-icon11.png"
+                alt="User"
+              />
+            </div>
+          </div>
+
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a class="header__link" href="">Home</a></li>
+              <li><a class="header__link" href="">Shop</a></li>
+              <li><a class="header__link" href="">Deals</a></li>
+              <li><a class="header__link" href="">New Arrivals</a></li>
+              <li><a class="header__link" href="">Best Sellers</a></li>
+              <li><a class="header__link" href="">Brands</a></li>
+              <li><a class="header__link" href="">Help & Support</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="header-icons-container">
-        <img class="cart_icon" src="icons/cart_icon.png" alt="cart_icon" />
-        <img
-          class="wishlist_icon"
-          src="icons/wishlist_icon.png"
-          alt="wishlist_icon"
-        />
-        <img class="user_icon" src="icons/user-icon11.png" alt="user_icon" />
-      </div>
-      <nav></nav>
     </header>
 
     <main>
