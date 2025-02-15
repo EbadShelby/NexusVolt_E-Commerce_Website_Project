@@ -6,6 +6,7 @@
     <title>NexusVolt</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
 
     <!-- linked google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,7 +40,7 @@
               />
               <div class="header__search-icon">
                 <img
-                  class="header__search-icon-image"
+                  class="header__search-icon--image"
                   src="icons/search_icon.png"
                   alt="Search"
                 />
@@ -47,21 +48,27 @@
             </div>
 
             <div class="header__icons">
-              <img
-                class="header__icon--cart"
-                src="icons/cart_icon.png"
-                alt="Cart"
-              />
-              <img
-                class="header__icon--wishlist"
-                src="icons/wishlist_icon.png"
-                alt="Wishlist"
-              />
-              <img
-                class="header__icon--user"
-                src="icons/user-icon11.png"
-                alt="User"
-              />
+              <button class="header__icon header__icon--cart">
+                <img
+                  class="header__icon--cart-image"
+                  src="icons/cart_icon.png"
+                  alt="Cart"
+                />
+              </button>
+              <button class="header__icon header__icon--wishlist">
+                <img
+                  class="header__icon--wishlist-image"
+                  src="icons/wishlist_icon.png"
+                  alt="Wishlist"
+                />
+              </button>
+              <button class="header__icon header__icon--user">
+                <img
+                  class="header__icon--user-image"
+                  src="icons/user-icon11.png"
+                  alt="User"
+                />
+              </button>
             </div>
           </div>
 
