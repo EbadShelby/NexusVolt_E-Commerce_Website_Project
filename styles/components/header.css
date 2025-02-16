@@ -3,13 +3,16 @@
   flex-direction: column;
   justify-content: space-between;
 
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1000;
 
-  padding: var(--spacing-200) var(--spacing-800);
+  max-width: 100%;
+  margin-inline: auto;
+
+  padding: var(--spacing-200);
   border-bottom: 1px solid var(--clr-neutral-800);
   background-color: var(--clr-neutral-900);
 
@@ -44,13 +47,16 @@
   display: flex;
   align-items: center;
   flex: 1;
-  /* margin-inline: var(--spacing-1200); */
+  justify-content: center;
+  margin-inline: var(--spacing-500);
 }
 
 .header__search-input {
   flex: 1;
 
   padding: 0.625rem var(--spacing-200);
+  width: 100%;
+  max-width: 35rem;
   border: 2px solid var(--clr-neutral-800);
   border-radius: 0.25rem 0 0 0.25rem;
   background-color: var(--clr-neutral-900);
