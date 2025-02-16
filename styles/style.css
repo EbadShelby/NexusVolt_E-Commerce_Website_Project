@@ -56,8 +56,6 @@
   --size-9xl: 8rem;
   --size-10xl: 10rem;
 }
-  
-}
 
 /* ======================================= */
 /* ========|| General Styling ||========== */
@@ -67,7 +65,6 @@ body {
   background-color: var(--clr-neutral-900);
   color: var(--clr-neutral-100);
 }
-
 
 /* ======================================= */
 /* ===========|| Main Style ||============ */
@@ -90,8 +87,6 @@ main {
   object-fit: cover;
   object-position: bottom;
 }
-
-
 
 /* button shadow  left-right/ down-up/ blur/ spread */
 /* box-shadow: inset 0px -2px 0px 1px rgba(0,0,0,0.4); */
