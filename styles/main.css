@@ -1,0 +1,69 @@
+.ads-carousel {
+  position: relative;
+  height: 600px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.ads-carousel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.ads-carousel__track-container {
+  background-color: aqua;
+  /* padding: .5em; */
+  height: 100%;
+  position: relative;
+}
+.ads-carousel__track {
+  /* padding: 0; */
+  /* margin: 0; */
+  list-style: none;
+}
+
+.ads-carousel__slide {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ads-carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(102, 27, 27, 0.5);
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.ads-carousel__button--left {
+  left: -40px;
+}
+.ads-carousel__button--right {
+  right: -40px;
+}
+
+.ads-carousel__nav {
+  background-color: rgb(73, 50, 50);
+  display: flex;
+  justify-content: center;
+  padding-block: .5em;
+  gap: .5em;
+}
+.ads-carousel__indicator {
+  width: .75em;
+  height: .75em;
+  border-radius: 50%;
+  background-color: var(--clr-neutral-100);
+  cursor: pointer;
+}
+.ads-carousel__indicator--active {
+  background-color: red;
+}
