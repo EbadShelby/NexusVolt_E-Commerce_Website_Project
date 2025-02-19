@@ -14,6 +14,7 @@ const setSlidePosition = (slide, index) => {
 slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
+  if (!targetSlide) return;
   track.style.transform = "translateX(-" + targetSlide.style.left + ")";
   currentSlide.classList.remove("ads-carousel__current-slide");
   targetSlide.classList.add("ads-carousel__current-slide");
@@ -27,18 +28,22 @@ const updateDots = (currentDot, targetDot) => {
 prevButton.addEventListener("click", (e) => {
   const currentSlide = track.querySelector(".ads-carousel__current-slide");
   const prevSlide = currentSlide.previousElementSibling;
+  const currentDot = dotsNav.querySelector(".ads-carousel__indicator--active");
+  const prevDot = currentDot.previousElementSibling;
 
   moveToSlide(track, currentSlide, prevSlide);
-  // updateDots(currentDot, targetDot);
+  updateDots(currentDot, prevDot);
 });
 
 // Move slides to the right
 nextButton.addEventListener("click", (e) => {
   const currentSlide = track.querySelector(".ads-carousel__current-slide");
   const nextSlide = currentSlide.nextElementSibling;
+  const currentDot = dotsNav.querySelector(".ads-carousel__indicator--active");
+  const nextDot = currentDot.nextElementSibling;
 
   moveToSlide(track, currentSlide, nextSlide);
-  // updateDots(currentDot, targetDot);
+  updateDots(currentDot, nextDot);
 });
 
 // Move slides using dots

@@ -72,3 +72,7 @@ img {
 .ads-carousel__indicator--active {
   background-color: var(--clr-accent-red);
 }
+
+.is-hidden {
+  display: none;
+}
