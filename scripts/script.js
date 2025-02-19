@@ -18,6 +18,10 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   currentSlide.classList.remove("ads-carousel__current-slide");
   targetSlide.classList.add("ads-carousel__current-slide");
 };
+const updateDots = (currentDot, targetDot) => {
+  currentDot.classList.remove("ads-carousel__indicator--active");
+  targetDot.classList.add("ads-carousel__indicator--active");
+};
 
 // Move slides to the left
 prevButton.addEventListener("click", (e) => {
@@ -25,6 +29,7 @@ prevButton.addEventListener("click", (e) => {
   const prevSlide = currentSlide.previousElementSibling;
 
   moveToSlide(track, currentSlide, prevSlide);
+  // updateDots(currentDot, targetDot);
 });
 
 // Move slides to the right
@@ -33,5 +38,20 @@ nextButton.addEventListener("click", (e) => {
   const nextSlide = currentSlide.nextElementSibling;
 
   moveToSlide(track, currentSlide, nextSlide);
+  // updateDots(currentDot, targetDot);
 });
 
+// Move slides using dots
+dotsNav.addEventListener("click", (e) => {
+  const targetDot = e.target.closest("button");
+  if (!targetDot) return;
+
+  const currentSlide = track.querySelector(".ads-carousel__current-slide");
+  const currentDot = dotsNav.querySelector(".ads-carousel__indicator--active");
+  const targetIndex = dots.findIndex((dot) => dot === targetDot);
+
+  const targetSlide = slides[targetIndex];
+
+  moveToSlide(track, currentSlide, targetSlide);
+  updateDots(currentDot, targetDot);
+});

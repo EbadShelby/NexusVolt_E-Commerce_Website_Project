@@ -5,9 +5,9 @@
   --clr-primary-700: hsl(204, 57%, 46%);
   --clr-primary-800: hsl(204, 77%, 26%);
 
-  --clr-secondary-green: hsl(156, 86%, 28%);
-  --clr-secondary-red: hsl(346, 100%, 42%);
-  --clr-secondary-dark-red: hsl(5, 65%, 33%);
+  --clr-accent-green: hsl(156, 86%, 28%);
+  --clr-accent-red: hsl(346, 100%, 42%);
+  --clr-accent-dark-red: hsl(5, 65%, 33%);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-400: hsl(71, 4%, 51%);
