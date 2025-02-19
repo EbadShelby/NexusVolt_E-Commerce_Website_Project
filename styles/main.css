@@ -1,6 +1,6 @@
 .ads-carousel {
   position: relative;
-  height: 600px;
+  height: 300px;
   width: 60%;
   margin: 0 auto;
 }
@@ -10,6 +10,10 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
+}
+
+img {
+  border-radius: .5em !important;
 }
 
 .ads-carousel__track-container {

@@ -22,19 +22,6 @@ const updateDots = (currentDot, targetDot) => {
   currentDot.classList.remove("ads-carousel__indicator--active");
   targetDot.classList.add("ads-carousel__indicator--active");
 };
-const hideShowArrows = () => {
-  if (targetIndex === 0) {
-    prevButton.classList.add("is-hidden");
-    nextButton.classList.remove("is-hidden");
-  } else if (targetIndex === slides.length - 1) {
-    prevButton.classList.remove("is-hidden");
-    nextButton.classList.add("is-hidden");
-  } else {
-    prevButton.classList.remove("is-hidden");
-    nextButton.classList.remove("is-hidden");
-  }
-} 
-
 
 // Move slides to the left
 prevButton.addEventListener("click", (e) => {
@@ -69,5 +56,14 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
 
   // Hide/show arrows
-  hideShowArrows()
+  if (targetIndex === 0) {
+    prevButton.classList.add("is-hidden");
+    nextButton.classList.remove("is-hidden");
+  } else if (targetIndex === slides.length - 1) {
+    prevButton.classList.remove("is-hidden");
+    nextButton.classList.add("is-hidden");
+  } else {
+    prevButton.classList.remove("is-hidden");
+    nextButton.classList.remove("is-hidden");
+  }
 });
