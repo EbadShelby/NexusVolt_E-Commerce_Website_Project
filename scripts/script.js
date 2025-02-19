@@ -1,3 +1,4 @@
+// set up the carousel
 const track = document.querySelector(".ads-carousel__track");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".ads-carousel__button--right");
@@ -19,9 +20,23 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   currentSlide.classList.remove("ads-carousel__current-slide");
   targetSlide.classList.add("ads-carousel__current-slide");
 };
+
 const updateDots = (currentDot, targetDot) => {
   currentDot.classList.remove("ads-carousel__indicator--active");
   targetDot.classList.add("ads-carousel__indicator--active");
+};
+
+const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+  if (targetIndex === 0) {
+    prevButton.classList.add("is-hidden");
+    nextButton.classList.remove("is-hidden");
+  } else if (targetIndex === slides.length - 1) {
+    prevButton.classList.remove("is-hidden");
+    nextButton.classList.add("is-hidden");
+  } else {
+    prevButton.classList.remove("is-hidden");
+    nextButton.classList.remove("is-hidden");
+  }
 };
 
 // Move slides to the left
@@ -30,9 +45,11 @@ prevButton.addEventListener("click", (e) => {
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = dotsNav.querySelector(".ads-carousel__indicator--active");
   const prevDot = currentDot.previousElementSibling;
+  const prevIndex = slides.findIndex((slide) => slide === prevSlide);
 
   moveToSlide(track, currentSlide, prevSlide);
   updateDots(currentDot, prevDot);
+  hideShowArrows(slides, prevButton, nextButton, prevIndex);
 });
 
 // Move slides to the right
@@ -41,9 +58,11 @@ nextButton.addEventListener("click", (e) => {
   const nextSlide = currentSlide.nextElementSibling;
   const currentDot = dotsNav.querySelector(".ads-carousel__indicator--active");
   const nextDot = currentDot.nextElementSibling;
+  const nextIndex = slides.findIndex((slide) => slide === nextSlide);
 
   moveToSlide(track, currentSlide, nextSlide);
   updateDots(currentDot, nextDot);
+  hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });
 
 // Move slides using dots
@@ -59,16 +78,5 @@ dotsNav.addEventListener("click", (e) => {
 
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
-
-  // Hide/show arrows
-  if (targetIndex === 0) {
-    prevButton.classList.add("is-hidden");
-    nextButton.classList.remove("is-hidden");
-  } else if (targetIndex === slides.length - 1) {
-    prevButton.classList.remove("is-hidden");
-    nextButton.classList.add("is-hidden");
-  } else {
-    prevButton.classList.remove("is-hidden");
-    nextButton.classList.remove("is-hidden");
-  }
+  hideShowArrows(slides, prevButton, nextButton, targetIndex);
 });
