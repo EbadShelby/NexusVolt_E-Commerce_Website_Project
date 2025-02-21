@@ -1,7 +1,7 @@
 /* ===========|| Carousel ||============ */
 .ads-carousel {
   position: relative;
-  height: 300px;
+  height: 18.75rem;
   width: 60%;
   margin-inline: auto;
   margin-bottom: var(--spacing-600);
@@ -11,7 +11,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.25rem;
+  border-radius: .5em;
 }
 
 .ads-carousel__track-container {
@@ -48,10 +48,10 @@
 }
 
 .ads-carousel__button--left {
-  left: -40px;
+  left: -2.5rem;
 }
 .ads-carousel__button--right {
-  right: -40px;
+  right: -2.5rem;
 }
 
 .ads-carousel__nav {
@@ -84,5 +84,20 @@
 }
 
 .categories__category {
-  max-width: 430px;
+  max-width: 432px;
+  position: relative;
+}
+.category__image {
+  object-fit: cover;
+  border-radius: .5em;
+}
+.category__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-neutral-100);
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
