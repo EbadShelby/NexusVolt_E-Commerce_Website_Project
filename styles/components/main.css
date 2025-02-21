@@ -2,7 +2,8 @@
   position: relative;
   height: 300px;
   width: 60%;
-  margin: 0 auto;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-700);
 }
 
 .ads-carousel__image {
@@ -10,10 +11,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
-}
-
-img {
-  border-radius: .5em !important;
 }
 
 .ads-carousel__track-container {
@@ -59,12 +56,12 @@ img {
 .ads-carousel__nav {
   display: flex;
   justify-content: center;
-  padding-block: .5em;
-  gap: .5em;
+  padding-block: 0.5em;
+  gap: 0.5em;
 }
 .ads-carousel__indicator {
-  width: .75em;
-  height: .75em;
+  width: 0.75em;
+  height: 0.75em;
   border-radius: 50%;
   background-color: var(--clr-neutral-100);
   cursor: pointer;

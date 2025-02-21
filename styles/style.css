@@ -74,39 +74,6 @@ main {
   padding-top: var(--spacing-900);
 }
 
-.new-on-shop {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-.new-on-shop img {
-  width: 100%;
-  max-width: 700px;
-  height: 300px;
-  border-radius: 0.25rem;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-.collections {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3em;
-  margin-top: 5em;
-}
-.collections > * {
-  text-align: center;
-  font-size: 2rem;
-}
-.collections img {
-  width: 100%;
-  height: 300px;
-  border-radius: 0.25rem;
-  object-fit: cover;
-  object-position: bottom;
-}
-
-
 /* button shadow  left-right/ down-up/ blur/ spread */
 /* box-shadow: inset 0px -2px 0px 1px rgba(0,0,0,0.4); */
 
