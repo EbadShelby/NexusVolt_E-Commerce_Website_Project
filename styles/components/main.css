@@ -1,9 +1,10 @@
+/* ===========|| Carousel ||============ */
 .ads-carousel {
   position: relative;
   height: 300px;
   width: 60%;
   margin-inline: auto;
-  margin-bottom: var(--spacing-700);
+  margin-bottom: var(--spacing-600);
 }
 
 .ads-carousel__image {
@@ -72,4 +73,16 @@
 
 .is-hidden {
   display: none;
+}
+
+/* ===========|| Categories ||============ */
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-600);
+}
+
+.categories__category {
+  max-width: 430px;
 }
