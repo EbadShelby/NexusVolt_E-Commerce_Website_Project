@@ -122,3 +122,17 @@
   justify-content: center;
   gap: var(--spacing-600);
 }
+
+.best-sellers__title {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+}
+
+.best-sellers__product {
+  position: relative;
+}
+.best-sellers__image {
+  object-fit: cover;
+  border-radius: 0.5em;
+}
