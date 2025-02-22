@@ -116,3 +116,9 @@
   font-weight: var(--fw-bold);
   cursor: pointer;
 }
+
+.best-sellers {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-600);
+}
